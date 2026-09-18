@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Devvrat Yadav — AI Systems Engineer</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 20 20%22%3E%3Crect width=%2220%22 height=%2220%22 rx=%223%22 fill=%22%2314110F%22/%3E%3Cpath d=%22M10 3 L10 12 M10 12 L5 17 M10 12 L15 17 M10 8.5 L6 6 M10 8.5 L14 6%22 stroke=%22%23C97C3D%22 stroke-width=%221.5%22 fill=%22none%22 stroke-linecap=%22round%22/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -240,7 +241,7 @@
     <a class="pill" href="mailto:devy522003@gmail.com" id="emailPill">Email</a>
     <a class="pill" href="https://linkedin.com/in/devvrat523" target="_blank" rel="noopener">LinkedIn</a>
     <a class="pill" href="https://github.com/devy52" target="_blank" rel="noopener">GitHub</a>
-    <a class="pill ghost" href="https://drive.google.com/file/d/16vdcmmHJjQj3_anFIL9UxFTTs_Wlw3jv/view?usp=sharing" id="resumePill" title="Wire this to your hosted resume PDF">Download Resume ↓</a>
+    <a class="pill ghost" href="https://drive.google.com/file/d/16vdcmmHJjQj3_anFIL9UxFTTs_Wlw3jv/view?usp=drive_link" id="resumePill" title="Wire this to your hosted resume PDF">Download Resume ↓</a>
   </div>
   <div class="stat-row">
     <div class="stat"><b class="mono">05</b><span>Systems shipped</span></div>
@@ -517,7 +518,7 @@ viewport.addEventListener('wheel', e=>{
   const out1 = document.getElementById('out1');
   const line2 = document.getElementById('line2'), type2 = document.getElementById('type2'), cur2 = document.getElementById('cur2');
   const out2 = document.getElementById('out2');
-  const cmd1 = 'whoami', cmd2 = 'cat mission.txt';
+  const cmd1 = 'WhoAmI', cmd2 = 'cat mission.txt';
 
   if(reduced){ type1.textContent = cmd1; type2.textContent = cmd2; return; } // everything already visible by default
 
@@ -551,10 +552,10 @@ viewport.addEventListener('wheel', e=>{
 })();
 
 /* ---- copy email to clipboard ---- */
-(function(){
+/* (function(){
   const resumePill = document.getElementById('resumePill');
   if(resumePill) resumePill.addEventListener('click', e => e.preventDefault());
-})();
+})(); */
 (function(){
   const emailPill = document.getElementById('emailPill');
   if(!emailPill) return;
